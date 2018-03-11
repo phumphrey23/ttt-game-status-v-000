@@ -50,7 +50,10 @@ def draw?(board)
 end
 
 def over?(board)
-  something
+  if won?(board) || draw?(board)
+    return true
+  else
+    false
 end
 
 def winner?(board)
