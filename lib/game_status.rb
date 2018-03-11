@@ -26,13 +26,13 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
   if win_combination.all?{|y| board[y] == "X"}
     return win_combination
-  elsif if win_combination.all?{|y| board[y] == "O"}
+  elsif win_combination.all?{|y| board[y] == "O"}
     return win_combination
   else board.none? { |i| i == "X" || i = "O"}
     return false
    end
  end
- end
+ 
 
 
 
