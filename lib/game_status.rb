@@ -64,4 +64,5 @@ def winner?(board)
    return "O"
  else draw?(board) || !full?(board)) && !won?(board)
    return nil
+ end
 end
